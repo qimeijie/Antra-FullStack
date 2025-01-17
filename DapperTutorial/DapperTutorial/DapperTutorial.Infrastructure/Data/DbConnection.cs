@@ -5,12 +5,15 @@ namespace DapperTutorial.Infrastructure.Data;
 
 public class DbConnection
 {
-    public SqlConnection GetConnection()
-    {
-        var conn = new ConfigurationBuilder()
+    private readonly string _connectionString;
+    public DbConnection() {
+        _connectionString = new ConfigurationBuilder()
             .AddJsonFile("appsettings.json")
             .Build()
             .GetConnectionString("DecBatchDb");
-        return new SqlConnection(conn);
+    }
+    public SqlConnection GetConnection()
+    {
+        return new SqlConnection(_connectionString);
     }
 }

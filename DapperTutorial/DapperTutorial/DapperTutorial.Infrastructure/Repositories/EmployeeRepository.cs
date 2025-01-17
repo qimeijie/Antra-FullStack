@@ -59,14 +59,14 @@ public class EmployeeRepository: IRepository<Employee>
                         From employee e INNER JOIN Department d on e.DepartmentId = d.Id where e.Id = @id";
 
             return conn.Query<Employee, Department, Employee>(
-            sql,
-            (employee, department) =>
-            {
-                employee.Department = department;
-                return employee;
-            },
-            new { Id = id }
-        ).FirstOrDefault();
+                sql,
+                (employee, department) =>
+                {
+                    employee.Department = department;
+                    return employee;
+                },
+                new { Id = id }
+            ).FirstOrDefault();
         }
     }
 }
