@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Header</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin:0;
+        }
+        .navbar {
+            background-color: #234465;
+            overflow: hidden;
+            width: 100%;
+            color: white;
+            font-size: 16px;
+        }
+        #logo {
+            height: 100px;
+            background-color: #3e406b
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: inherit;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: inherit;
+            font-family: inherit;
+        }
+        a {
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+        }
+        .dropbtn::after {
+            content: ' ▼';
+            font-size: 12px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #234465;
+            min-width: 160px;
+        }
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .search {
+            background-color:inherit;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    <table class="navbar" cellpadding="5">
+        <tr>
+            <td rowspan="2"><img id="logo" src="https://antra.com/wp-content/uploads/2024/12/Antra-white-2048x683.png" alt="Antra Logo" /></td>
+            <td colspan="6">
+                <table align="right">
+                    <tr>
+                        <td>
+                            <a href="#">0 &#x1F514;</a>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                    USER
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#">Logout</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <form action="#" method="get">
+                                <input width="200" /><button class="search" type="submit">&#x1F50D;</button>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://antra.com/blogs/">NEWS</a></td>
+            <td>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        ABOUT THE UNIVERSITY
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="https://antra.com/workforce-solutions/">LINK1</a>
+                        <a href="https://antra.com/technology-solutions/">LINK2</a>
+                        <a href="https://antra.com/workforce-solutions/direct-hiring/">LINK3</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        TRAINING COURSES
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="https://antra.com/retail/">Full Stack</a>
+                        <a href="https://antra.com/ites/">Java</a>
+                        <a href="https://antra.com/communication-and-media/">MEAN Stack</a>
+                    </div>
+                </div>
+            </td>
+            <td><a href="https://antra.com/diversity-equity-inclusion-and-belonging/">FOR COMPANIES</a></td>
+            <td><a href="https://antra.com/blogs/">FORUM</a></td>
+            <td><a href="https://antra.com/contact-us/">CONTACTS</a></td>
+        </tr>
+    </table>
+</body>
+</html>

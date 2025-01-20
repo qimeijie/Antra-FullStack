@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Website Footer</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        footer {
+            background-color: #262e31;
+            color: white;
+            display: grid;
+            grid-template-rows: auto auto;
+            font-size: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        section {
+            padding: 16px;
+        }
+        .firstrow {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            padding:0 100px 0 100px;
+        }
+        .secondrow {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            background-color: black;
+            gap: 16px;
+            padding: 0 100px 0 100px;
+        }
+        #copyright {
+            text-align: left;
+        }
+        #like {
+            text-align: right;
+        }
+        .img_social {
+            height:16px;
+            width:16px;
+            padding: 0 10px 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="firstrow">
+            <section>
+                <h4>Corporate Office:</h4>
+                <p>
+                    <address>21355 Ridgetop Circle<br />Suite #300<br />Culles, VA 20166</address>
+                    Ph: 7039944545
+                    <br />
+                    email: info@antra.net
+                </p>
+            </section>
+            <section>
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="https://antra.com/technology-solutions/">Technology Services</a></li>
+                    <li><a href="https://antra.com/technology-solutions/">Business Advisory Services</a></li>
+                    <li><a href="https://antra.com/workforce-solutions/">Professional Services</a></li>
+                    <li><a href="https://antra.com/blogs/">Blog</a></li>
+                    <li><a href="https://antra.com/about-us/">About Us</a></li>
+                    <li><a href="https://antra.com/contact-us/">Contact Us</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://antra.com/banking-and-financial-services/">Case Studies</a></li>
+                    <li><a href="https://antra.com/communication-and-media/">White Papers</a></li>
+                    <li><a href="https://antra.com/government-and-public-sector/">Technology Resources</a></li>
+                    <li><a href="https://antra.com/ites/">Top Technology Trends 2017</a></li>
+                    <li><a href="https://antra.com/retail/">Agile Transformations</a></li>
+                    <li><a href="https://antra.com/state-local-and-non-profits/">Web &Aacute; Mobile Application Development</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Our Locations</h3>
+                <img src="location.png" alt="Our Location" height="150" width="300" />
+            </section>
+        </div>
+        <div class="secondrow">
+            <section id="copyright">
+                &copy;2017 Antra. Inc. All Rights Reserved.
+            </section>
+            <section id="like">
+                    <a href="https://www.facebook.com/people/Antra-Inc/100071878189730/" target="_blank">
+                        <img class="img_social" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">    
+                    </a>
+                    <a href="https://www.instagram.com/antra.inc/" target="_blank">
+                        <img class="img_social" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="https://x.com/antrainc" target="_blank">
+                        <img class="img_social" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                    </a>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
